@@ -1,0 +1,40 @@
+{
+  "formatVersion": 1,
+  "importedOn": "2026-09-17",
+  "archiveName": "Design form feedback.zip",
+  "archiveSha256": "1e1af784b5f4018af51fb6f676a10d78ad1909b93a0bea5f2eb19d797205ba97",
+  "sourceDesignVersion": "Typist visual system v1.0",
+  "originalFiles": [
+    {
+      "archiveEntry": "Typist Design System.dc.html",
+      "repositoryPath": "reference/Typist Design System.dc.html",
+      "bytes": 263172,
+      "sha256": "d348734430d1429a9aee08494f469de9eb2a9b3a80ffe17e3cffb359883bc34d"
+    },
+    {
+      "archiveEntry": "support.js",
+      "repositoryPath": "reference/support.js",
+      "bytes": 69150,
+      "sha256": "8fe7df74405f3c55f49b7249c74ea1397e65d07dea2b1bd3b4a489bec2e28cbe"
+    },
+    {
+      "archiveEntry": "github.md",
+      "repositoryPath": "reference/github.md",
+      "bytes": 2279,
+      "sha256": "3128b38c5f577fa5782ceb62bd6fbbc55a61dc2f21e3681f3c102456ae08e36e"
+    },
+    {
+      "archiveEntry": ".thumbnail",
+      "repositoryPath": "reference/thumbnail.webp",
+      "bytes": 26764,
+      "sha256": "fd76f7b7d53115ee40f1f06f36248c9afc3c1cb1b767e0ccb96a388071e51569"
+    }
+  ],
+  "derivedFiles": {
+    "tokens.css": "Extracted CSS handoff; zone tints moved to the active hand scope.",
+    "tokens.json": "Extracted JSON; dark palette completed from CSS, font families and missing type roles added, custom formatVersion replaces non-resolvable schema label.",
+    "previews/today.png": "Browser screenshot of the original 1440 x 900 Today frame.",
+    "previews/practice.png": "Browser screenshot of the original 1440 x 900 light Practice frame.",
+    "previews/dark-practice.png": "Browser screenshot of the original 1440 x 900 dark Practice frame."
+  }
+}

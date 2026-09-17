@@ -4,7 +4,7 @@ An implementation-ready specification for a personal typing trainer that teaches
 
 The target is **four acquired modes: 30 WPM, at least 98% accuracy, and no keyboard checking, repeated across three sessions**. Typist should guide today's practice, maintain earlier skills, expose recurring mistakes, and measure the cost of switching between hands and layouts. The suggested core program takes 20 weeks, with progress gates taking priority over dates.
 
-**Status:** specification only. There is no application or deployed service yet. The proposed application is a desktop web app that works offline and stores practice data locally.
+**Status:** specification and visual design handoff. There is no training application or deployed service yet. The proposed application is a desktop web app that works offline and stores practice data locally.
 
 ## Read the specification
 
@@ -15,6 +15,7 @@ The target is **four acquired modes: 30 WPM, at least 98% accuracy, and no keybo
 | [Input and layouts](docs/input-and-layouts.md) | Actual OS layouts, keyboard geometry, calibration, fingering, and input handling |
 | [Measurement contract](docs/measurement.md) | Scoring formulas, benchmark eligibility, comparison rules, and worked examples |
 | [Architecture and data](docs/architecture.md) | Components, state transitions, persistence, and data contracts |
+| [Visual design system](design/README.md) | Original design canvas, light/dark tokens, screen previews, and implementation review |
 | [Two-machine endgame](docs/dual-machine.md) | Optional coordinated practice on two machines, baselines, and dual efficiency |
 | [Build plan and acceptance](docs/build-plan.md) | Ordered implementation milestones and observable acceptance scenarios |
 | [Training defaults](config/training-defaults.json) | Machine-readable mode catalog and protocol parameters |
@@ -33,3 +34,9 @@ These are four skills backed by three logical layouts. Each mode keeps its own c
 The initial target assumes a physical US ANSI keyboard on Linux; onboarding must verify that assumption. Keyboard geometry and OS layout variants are explicit profiles so other setups can be added without mixing incompatible results. English prose is the reference benchmark; Portuguese and code are separate practice tracks.
 
 Start implementation with [milestone 1](docs/build-plan.md#milestone-1-input-and-measurement). Build the input and measurement foundation before adaptive scheduling or progress charts.
+
+## Visual reference
+
+The supplied design establishes the warm neutral palette, serif headings, monospaced practice surface, tactile keycaps, and separate hand identities. The [design handoff](design/README.md) includes reusable tokens and [review notes](design/REVIEW.md) for implementation.
+
+![Typist Today screen from the supplied visual design](design/previews/today.png)

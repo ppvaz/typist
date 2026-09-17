@@ -99,10 +99,13 @@ The monthly view repeats the same fixed passage in each acquired mode, records a
 
 ## Interaction and quality requirements
 
+Use the supplied [visual design system](design/README.md) for typography, palettes, hand identity, component appearance, and screen composition. Its original canvas is preserved alongside normalized tokens. Apply the [design review](design/REVIEW.md) when building responsive layouts, keyboard controls, and live result states; the behavioral and measurement contracts in this specification govern the application.
+
 - Every control works by keyboard and pointer, including mode selection, recovery, and logging. Use native controls, visible focus, readable labels, adjustable type size, and an escape path from the typing area. Shortcuts must be optional and remappable because a comfortable position changes with each mode.
 - Do not convey errors or progress solely through color. Respect reduced motion. Provide result announcements and an accessible text entry field; do not overwhelm screen-reader users with per-keystroke announcements. Prompt narration or other typing assistance must be recorded when it affects benchmark comparability.
 - Practice must remain usable at 1280×720 and 200% zoom with reflow. Smaller screens may review progress, but the tested training target is a desktop with a physical keyboard.
 - No network request is required to start, complete, or review a cached session. Assets and corpora are versioned and cached locally. Optional reference links are clearly external.
+- Bundle the design's font files with their licenses for offline use. Disable programming ligatures in scored practice text so each displayed character remains distinct.
 - Input feedback should paint within 50 ms at the 95th percentile on the recorded reference machine. Measurement uses event timing, not render timing. A 10,000-trial local history should open a filtered progress view within one second on that machine.
 - All acquisition labels must show their supporting sessions and protocol version. A setting change does not rewrite past results or invent equivalent evidence.
 - Preserve the roadmap's instruction to stop or reduce practice when discomfort appears. Logging high fatigue suggests rest or a shorter session; fatigue never grants progress, and stopping never creates a penalty.

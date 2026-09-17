@@ -80,4 +80,6 @@ The 20-week program, gates, and maintenance parameters are hobby-project default
 
 ## Source handling
 
-Keep the user-provided roadmap as reference material in this repository, published publicly at the user's request. No repository-wide open-source license is assigned by this specification. Future copied third-party implementation/data assets must preserve their own licenses and attribution. The spec does not bundle external tutorial text, downloaded software, or unrelated files from Downloads.
+The user also supplied `Design form feedback.zip` as a visual handoff on 17 September 2026. Its four original entries are preserved under [design/reference](../design/reference/Typist%20Design%20System.dc.html), with archive and file checksums in [the import manifest](../design/manifest.json). Normalized tokens and implementation findings are documented in the [design review](../design/REVIEW.md). This establishes the visual reference without changing the four-mode training scope.
+
+Keep the user-provided roadmap as reference material in this repository, published publicly at the user's request. No repository-wide open-source license is assigned by this specification. Future copied third-party implementation/data assets must preserve their own licenses and attribution. Reference files consist of the supplied roadmap and design export.

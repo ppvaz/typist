@@ -1,10 +1,12 @@
 # Build plan and acceptance
 
-This repository specifies the product; the milestones below are future implementation work. The first usable release completes milestones 1–4. Optional expansion work follows independently.
+This repository specifies the product and supplies its [visual design handoff](../design/README.md); the milestones below are future application work. The first usable release completes milestones 1–4. Optional expansion work follows independently.
 
 ## Milestone 1: Input and measurement
 
 Build the native-input adapter, layout registry, first-run calibration, strict append/tail-Backspace reducer, monotonic timing, frozen prompts, and trial records. Start with QWERTY but finish QL/QR/DL/DR calibration fixtures before declaring this milestone complete. Include a minimal practice/result screen and local trial saving so the measurement foundation is usable.
+
+Use the extracted [design tokens](../design/tokens.css) and screen reference to build application components. The export's preview runtime and simulated counters/saving remain reference material; implement the domain contracts directly. Include the [handoff corrections](../design/REVIEW.md) in component behavior and responsive styling.
 
 Deliver the full base/Shift/control mappings for the user's actual physical profile, with source/license attribution. Verify Dvorak-L and Dvorak-R against OS output, including the number row. Supply original reference content and a manifest.
 
@@ -25,6 +27,8 @@ Exit: a synthetic history with a weak acquired mode produces the correct mainten
 ## Milestone 4: Offline reliability and personal-use release
 
 Complete offline caching/update behavior, error recovery, persistence visibility, import/export, migration/restore handling, accessibility, and the manual compatibility matrix. Record dependency versions, build commands, and actual verification results in the implemented repository.
+
+Verify the design review's implementation checks, including hand-scoped zone colors, live block counts, declaration defaults, contrast, reflow without assistance changes, and licensed local fonts.
 
 Exit: the entire core daily loop works offline; full backup/restore preserves milestones and source evidence; a storage failure or second writer cannot silently lose or double-count work. This is the release gate for the core app.
 
