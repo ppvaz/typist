@@ -1,0 +1,16 @@
+# Local dependencies and build output, once implementation starts.
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+
+# Local configuration and personal practice data.
+.env
+.env.*
+!.env.example
+local-data/
+exports/
+backups/
+*.log
+.DS_Store

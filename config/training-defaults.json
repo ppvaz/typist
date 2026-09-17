@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "protocolId": "typist-core-v1",
+  "sourceRoadmapVersion": "1.2",
+  "coreModes": [
+    { "id": "QL", "layoutId": "qwerty-us", "hand": "left", "technique": "full-board" },
+    { "id": "QR", "layoutId": "qwerty-us", "hand": "right", "technique": "full-board" },
+    { "id": "DL", "layoutId": "dvorak-left-us", "hand": "left", "technique": "purpose-built" },
+    { "id": "DR", "layoutId": "dvorak-right-us", "hand": "right", "technique": "purpose-built" }
+  ],
+  "baselineMode": { "id": "Q2", "layoutId": "qwerty-us", "hand": "both", "countsTowardCore": false },
+  "initialAssumptions": { "os": "linux", "geometry": "ansi-us", "requiresCalibration": true },
+  "roadmap": [
+    { "stage": 1, "suggestedWeeks": [1, 4], "primaryMode": "QL", "gate": "advance" },
+    { "stage": 2, "suggestedWeeks": [5, 8], "primaryMode": "QR", "gate": "advance" },
+    { "stage": 3, "suggestedWeeks": [9, 12], "primaryMode": "DL", "gate": "advance" },
+    { "stage": 4, "suggestedWeeks": [13, 16], "primaryMode": "DR", "gate": "advance" },
+    { "stage": 5, "suggestedWeeks": [17, 20], "primaryMode": null, "gate": "core-completion" }
+  ],
+  "schedule": {
+    "practiceWeekdaysIso": [1, 2, 3, 4, 5],
+    "defaultDailyMinutes": 30,
+    "maxModesPerStandardSession": 2,
+    "standardBlocksMinutes": { "warmup": 3, "weakKeys": 7, "words": 10, "timedText": 7, "log": 3 },
+    "deepBlocksMinutes": { "warmup": 5, "weakKeys": 10, "words": 10, "proseOrCode": 10, "switching": 5, "benchmarkAndNotes": 5 },
+    "fridayBlocksMinutes": { "warmup": 3, "benchmark": 5, "weakKeys": 7, "lightWords": 7, "switching": 5, "log": 3 }
+  },
+  "benchmark": {
+    "protocolId": "english-prose-60-v1",
+    "language": "en",
+    "durationSeconds": 60,
+    "trialsPerSet": 3,
+    "restBetweenTrialsSeconds": 60,
+    "correctionPolicy": "append-tail-backspace",
+    "aggregate": "median",
+    "jointPassingTrialsRequired": 2,
+    "zeroPhysicalGlancesRequiredOnAllTrials": true,
+    "keymapAssistanceAllowed": false,
+    "designatedHandConfirmationRequired": true,
+    "qualifyingSetsPerModePerLocalDate": 1,
+    "qualifyingSetSelection": "first-complete-eligible"
+  },
+  "gates": {
+    "advance": { "wpm": 20, "accuracyPercent": 97, "sessions": 1, "distinctLocalDates": 1 },
+    "acquired": { "wpm": 30, "accuracyPercent": 98, "sessions": 3, "distinctLocalDates": 3 },
+    "strong": { "wpm": 45, "accuracyPercent": 98.5, "sessions": 3, "distinctLocalDates": 3 },
+    "showcase": { "wpm": 60, "accuracyPercent": 99, "sessions": 3, "distinctLocalDates": 3 },
+    "coreCompletion": { "allCoreModesAcquired": true, "latestSetMustPassAcquiredThreshold": true, "latestSetMaxAgeDays": 14 }
+  },
+  "maintenance": {
+    "unacquiredAdvancedSlotsPerWeek": 2,
+    "acquiredSlotsPerWeek": 1,
+    "increasedSlotsPerWeek": 2,
+    "slotMinutesRange": [5, 10],
+    "preferredBenchmarkSlotMinutes": 8,
+    "rollingComparableSets": 3,
+    "increaseWhenSpeedLossFractionGreaterThan": 0.15,
+    "accuracyFloorPercent": 98,
+    "retentionBreakMinimumDays": 7,
+    "retentionPassSpeedLossFractionLessThan": 0.15
+  },
+  "adaptation": {
+    "maxRecentBlocks": 5,
+    "maxRecentInsertions": 500,
+    "minimumKeyOpportunities": 20,
+    "minimumBigramSamples": 10,
+    "maxWeakTargets": 3,
+    "targetMaterialFraction": 0.6,
+    "mixedMaterialFraction": 0.3,
+    "coverageMaterialFraction": 0.1
+  },
+  "switching": {
+    "blockedMinutesRange": [10, 20],
+    "resetSecondsRange": [5, 10],
+    "pairedMinutesRange": [2, 5],
+    "randomizedTrialSecondsRange": [30, 60],
+    "correctStreakLength": 10,
+    "probeTimeoutSeconds": 30,
+    "familiarTargetSecondsLessThan": 10,
+    "advancedTargetSecondsLessThan": 5,
+    "randomReadinessSuccessfulProbesPerDirection": 5,
+    "excludeImmediateRepeats": true
+  },
+  "fingering": { "suggestedFreezeDays": 14 },
+  "expansions": {
+    "requireCoreCompletion": true,
+    "optionalModeIds": ["CL", "CR", "WL", "WR", "HQL", "HQR"],
+    "dualMachine": {
+      "optional": true,
+      "requiresTwoPhysicalMachines": true,
+      "initialLevels": ["D1", "D2", "D3", "D4", "D5"],
+      "defaultTrialSeconds": 60,
+      "soloTrialsPerBaseline": 3,
+      "baselineMaxAgeDays": 7,
+      "minimumClockSamples": 8,
+      "clockSampleMaxAgeSeconds": 30,
+      "minimumStartLeadSeconds": 5,
+      "maxEstimatedClockUncertaintyMs": 100,
+      "maxObservedStartCueLatenessMs": 100,
+      "stallThresholdMs": 2000,
+      "copyAccuracyFloorPercent": 98,
+      "copyLevelAdvancementTrials": 3,
+      "throughputMilestoneDistinctDates": 3
+    }
+  }
+}
