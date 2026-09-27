@@ -23,7 +23,7 @@ This is the release report the [build plan](build-plan.md#verification-strategy)
 | Browsers | Google Chrome 154.0.8037.57; Mozilla Firefox 140.16.0esr |
 | Node.js / npm | 22.23.2 / 10.9.8 |
 | Physical keyboard | **Not yet recorded.** Onboarding asks; ANSI and ABNT2 are both supported and calibration confirms which one it is |
-| OS input sources found on this machine | `br` (ABNT2 Portuguese) and IBus Mozc (Japanese). Neither is a training layout: add the ones below before practising |
+| OS input sources on this machine | IBus Mozc (Japanese), `br` (active), and, added on 27 September 2026, `us+intl`, `us+dvorak-l`, `us+dvorak-r`; Super+Space switches between them |
 | Training layouts | QWERTY: `us(intl)` (US international, dead keys), your choice at onboarding; plain `us` also supported. Dvorak: `us(dvorak-l)`, `us(dvorak-r)`. Optional: `us(colemak)`, `us(workman)` |
 | Modifier strategy | Chosen at onboarding (default: hold Shift with the typing hand); recorded on every trial's setup snapshot |
 
@@ -114,12 +114,12 @@ Property checks (`tests/unit/scoring.property.test.ts`, fast-check) cover the ve
 
 ## Manual checklist
 
-Record results in the last column (date, browser, pass/fail, notes). Every row is still open.
+Record results in the last column (date, browser, pass/fail, notes). Rows marked "Not yet run" are still open.
 
 | # | Check | How | Result |
 | --- | --- | --- | --- |
 | M1 | Keyboard geometry | Onboarding's geometry question and detector: ANSI (one-row Enter, long left Shift) or ABNT2 (extra key beside left Shift, `/?` key beside right Shift). Note the keyboard model | Not yet run |
-| M2 | Input sources present | GNOME Settings → Keyboard → Input Sources: add *English (US, intl., with dead keys)*, *English (Dvorak, left-handed)*, *English (Dvorak, right-handed)*. Note how you switch between them | Not yet run |
+| M2 | Input sources present | GNOME Settings → Keyboard → Input Sources: *English (US, intl., with dead keys)*, *English (Dvorak, left-handed)*, *English (Dvorak, right-handed)*. Note how you switch between them | 27 Sep 2026: all three added (gsettings); switching with Super+Space. Confirm the top-bar indicator shows each one |
 | M3 | QWERTY calibration | Setup → Calibrate `us(intl)` in Chrome and in Firefox; expect "Calibration passed" with no mismatches | Not yet run |
 | M4 | Dead keys | In custom practice with `us(intl)`: `'` then `c` gives `ç`, `'` then Space gives `'`, `` ` `` then `a` gives `à`; the text `ação, café` scores 10 graphemes with none wrong | Not yet run |
 | M5 | Dvorak-L calibration | Calibrate `us(dvorak-l)` in both browsers; `KeyQ` gives `;`, `KeyF` gives `d`, and the number row matches the on-screen map | Not yet run |
