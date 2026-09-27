@@ -78,6 +78,28 @@ Proceed with one personal profile, English UI/reference prose, desktop hardware,
 
 The 20-week program, gates, and maintenance parameters are hobby-project defaults from the roadmap or explicit product choices above. They are not clinical protocols. The tool measures typing and self-reported experience; it does not infer neurological improvement, gaze, hand use, or mental attention directly.
 
+## Decisions made during implementation
+
+These refine the specification where it left a detail open. Each one is enforced in code and covered by tests; [verification.md](verification.md) lists what was checked.
+
+| Decision | Reason |
+| --- | --- |
+| The first complete set of a local date holds that date's slot per comparison series, including while its declarations are still unanswered | Answering a declaration later can qualify that set, but retrying the same day cannot replace a weaker one |
+| A trial with any insertion that has no associated key press, or several characters at once, is kept but marked `unverified` and never reference evidence | Provenance cannot be established after the fact; the result stays visible without earning a milestone |
+| Caps Lock calibration is optional, and is asked only when the layout's physical Caps Lock key is Caps Lock | It is often remapped; standard Colemak and Workman make it Backspace, so the layout tables record `capsLockKey` from XKB |
+| Dead-key input accepts both Linux paths: Chrome reports `Process` plus a composition, Firefox reports `Dead` plus a composition and sometimes a separate late insertion | Both produce one grapheme; neither counts twice |
+| The practice surface keeps a zero-width sentinel before the caret | Browsers do not reliably fire `beforeinput` for Backspace in an empty field, which would hide corrections |
+| A retention check needs at least seven full idle calendar days, and the first activity after the break must itself be the benchmark set | Warm-up practice before the check would otherwise inflate retention |
+| One writer tab holds a 10-second lease; a new tab pings the holder over BroadcastChannel and takes over only when nothing answers | A reload takes over immediately, while a second live tab cannot write a competing trial |
+| The service worker precaches an exact build list, ignores `Vary`, and activates updates only between sessions | Offline use must not depend on request headers, and an update must never swap code during a trial |
+| Half-QWERTY takes characters from the plain US QWERTY table by physical position whatever the OS layout; Space held mirrors (Tab↔Backspace, Caps Lock↔Enter), a tap types a space; results use `emulated-half-qwerty-prose-60-v1` and are labeled emulated | Keeps the emulation deterministic and its evidence separate from native modes |
+| Expansion modes use the same curriculum, gates and records as core modes but never enter the core-completion denominator | Optional layouts cannot delay or redefine core completion |
+| Dual solo baselines are matched by task class, derived from the stored exercise (generator or corpus), mode and setup revision; each side sends its baseline summary with its final counters | Either machine can then compute efficiency without receiving the other side's trials |
+| Dual start-cue lateness is measured at the animation frame that paints "Go"; a cue never painted inside the interval counts as a full interval late | The run's synchronization evidence is what the user actually saw |
+| A new dual run always gets a new manifest and run ID; importing a side file adds detail but never changes a run's coordinated verdict | A disconnected or stopped run stays incomplete even when both files turn up later |
+| Composition text and post-run notes stay on their machine and are left out of exported side files | The relay and side files carry counters and streams for analysis, not what was written |
+| A benchmark set is judged against the gate in effect when the set started | Its own award must not switch the result screen to the next gate |
+
 ## Source handling
 
 The user also supplied `Design form feedback.zip` as a visual handoff on 17 September 2026. Its four original entries are preserved under [design/reference](../design/reference/Typist%20Design%20System.dc.html), with archive and file checksums in [the import manifest](../design/manifest.json). Normalized tokens and implementation findings are documented in the [design review](../design/REVIEW.md). This establishes the visual reference without changing the four-mode training scope.

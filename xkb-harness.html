@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Typist XKB harness (development only)</title>
+    <style>
+      body { font: 16px monospace; margin: 0; }
+      #surface { position: fixed; inset: 0; width: 100vw; height: 100vh; font-size: 24px; }
+      #status { position: fixed; right: 8px; top: 8px; background: #ffd; padding: 4px; z-index: 2; }
+      #log { position: fixed; right: 8px; top: 40px; width: 40vw; max-height: 80vh; overflow: hidden; background: #eef; z-index: 2; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="status">loading</div>
+    <pre id="log"></pre>
+    <textarea id="surface" aria-label="Harness input" autocomplete="off" spellcheck="false"></textarea>
+    <script type="module" src="/src/dev/xkbHarness.ts"></script>
+  </body>
+</html>

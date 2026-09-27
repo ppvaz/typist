@@ -1,6 +1,6 @@
 # Build plan and acceptance
 
-This repository specifies the product and supplies its [visual design handoff](../design/README.md); the milestones below are future application work. The first usable release completes milestones 1–4. Optional expansion work follows independently.
+This repository specifies the product, supplies its [visual design handoff](../design/README.md), and now contains the application built from the milestones below. The first usable release completes milestones 1–4. Optional expansion work follows independently. What was verified for each milestone, and what still needs a physical keyboard, is recorded in [the verification report](verification.md).
 
 ## Milestone 1: Input and measurement
 
@@ -83,4 +83,4 @@ Use browser integration tests for the native text-event adapter, composition rec
 
 The implementation release report must record the actual keyboard model/geometry, Linux desktop/session type, browser/version, selected OS layout variants, modifier strategy, and checks performed. The initial target is Chromium and Firefox on that Linux setup; other browser/OS/geometry combinations stay unverified until tested. The dual report additionally records two machines, network conditions, synchronization estimates, disconnection tests, and independent local saves.
 
-No application test suite has been run at the specification stage because there is no application yet. Repository verification at this stage consists of document links, JSON consistency, roadmap alignment, and the source-file checksum.
+The application's unit, browser and OS-keymap results, and the release report fields above, are recorded in [verification.md](verification.md).

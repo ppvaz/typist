@@ -1,0 +1,11 @@
+#!/bin/sh
+# Copy today's notes into a dated backup folder.
+set -eu
+src="$HOME/notes"
+dest="$HOME/backup/$(date +%Y-%m-%d)"
+mkdir -p "$dest"
+for f in "$src"/*.txt; do
+  [ -e "$f" ] || continue
+  cp -p "$f" "$dest/"
+done
+echo "copied $(ls "$dest" | wc -l) files to $dest"

@@ -1,0 +1,48 @@
+{
+  "name": "typist",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal one-hand typing trainer for QWERTY and one-hand Dvorak, with honest measurement.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && vite build && node scripts/collect-licenses.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.app.json && tsc -p tsconfig.test.json && tsc -p tsconfig.node.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "layouts:extract": "node scripts/xkb-extract.mjs",
+    "layouts:check": "node scripts/xkb-extract.mjs --check",
+    "content:build": "node scripts/build-corpus.mjs",
+    "content:check": "node scripts/build-corpus.mjs --check",
+    "xkb:check": "node scripts/xkb-os-check.mjs",
+    "coordinator": "node server/coordinator.mjs",
+    "verify": "npm run content:check && npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0",
+    "@fontsource/newsreader": "5.3.0",
+    "idb": "8.0.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "ws": "8.22.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "22.20.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "axe-core": "4.13.0",
+    "fake-indexeddb": "6.2.5",
+    "fast-check": "4.10.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.0",
+    "vitest": "5.0.1"
+  }
+}

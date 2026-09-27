@@ -4,7 +4,24 @@ An implementation-ready specification for a personal typing trainer that teaches
 
 The target is **four acquired modes: 30 WPM, at least 98% accuracy, and no keyboard checking, repeated across three sessions**. Typist should guide today's practice, maintain earlier skills, expose recurring mistakes, and measure the cost of switching between hands and layouts. The suggested core program takes 20 weeks, with progress gates taking priority over dates.
 
-**Status:** specification and visual design handoff. There is no training application or deployed service yet. The proposed application is a desktop web app that works offline and stores practice data locally.
+**Status:** implemented as a desktop web app that works offline and stores practice data locally (IndexedDB). Milestones 1–4 (the core release) and the optional milestones 5 (Colemak, Workman, emulated Half-QWERTY) and 6 (two machines) are built; what was verified automatically, and the physical-keyboard checks that remain for you, are in [the verification report](docs/verification.md).
+
+## Run it
+
+Requires Node.js 22.12 or later, on Linux with Chrome/Chromium or Firefox.
+
+```sh
+npm ci
+npm run dev        # development server with fixtures, http://localhost:5173
+npm run build      # typecheck, production bundle in dist/, third-party licenses
+npm run preview    # serve the production bundle (service worker, offline)
+npm run verify     # content check, typecheck, unit tests, build
+npm run test:e2e   # browser tests (Chrome and Firefox; builds first)
+```
+
+Before practising, add the OS input sources you train with (GNOME: Settings → Keyboard → Input Sources): *English (US, intl., with dead keys)* for QWERTY, and *English (Dvorak, left-handed)* / *English (Dvorak, right-handed)* for DL/DR. Onboarding confirms your keyboard geometry (ANSI or ABNT2), and calibration checks every key against the layout table before any benchmark counts.
+
+The optional two-machine module needs a small coordinator on your network; see [two-machine setup](docs/dual-machine-setup.md).
 
 ## Read the specification
 
@@ -18,6 +35,8 @@ The target is **four acquired modes: 30 WPM, at least 98% accuracy, and no keybo
 | [Visual design system](design/README.md) | Original design canvas, light/dark tokens, screen previews, and implementation review |
 | [Two-machine endgame](docs/dual-machine.md) | Optional coordinated practice on two machines, baselines, and dual efficiency |
 | [Build plan and acceptance](docs/build-plan.md) | Ordered implementation milestones and observable acceptance scenarios |
+| [Verification report](docs/verification.md) | Environment, commands, automated results, acceptance coverage, and the manual keyboard checklist |
+| [Two-machine setup](docs/dual-machine-setup.md) | Certificates, coordinator, and connectivity checks for the optional two-machine module |
 | [Training defaults](config/training-defaults.json) | Machine-readable mode catalog and protocol parameters |
 | [Sources and decisions](docs/sources-and-decisions.md) | Roadmap traceability, verified references, assumptions, and design decisions |
 | [Revised roadmap](references/Ambidextrous_One-Hand_Touch_Typing_Roadmap_v1_2.pdf) | User-supplied source of truth, version 1.2, September 2026 |
@@ -33,7 +52,6 @@ These are four skills backed by three logical layouts. Each mode keeps its own c
 
 The initial target assumes a physical US ANSI keyboard on Linux; onboarding must verify that assumption. Keyboard geometry and OS layout variants are explicit profiles so other setups can be added without mixing incompatible results. English prose is the reference benchmark; Portuguese and code are separate practice tracks.
 
-Start implementation with [milestone 1](docs/build-plan.md#milestone-1-input-and-measurement). Build the input and measurement foundation before adaptive scheduling or progress charts.
 
 ## Visual reference
 

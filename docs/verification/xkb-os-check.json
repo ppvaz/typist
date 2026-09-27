@@ -1,0 +1,1354 @@
+{
+  "generatedAt": "2026-09-27T07:57:32.511Z",
+  "host": {
+    "kernel": "Linux 6.12.107+deb13-amd64"
+  },
+  "results": [
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "qwerty-us-intl",
+      "geometry": "ansi-us",
+      "xkb": "us(intl)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: intl",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 103,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "F"
+            }
+          },
+          {
+            "step": "info:dead-then-t",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": ""
+            }
+          },
+          {
+            "step": "info:dead-then-c",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": ""
+            }
+          },
+          {
+            "step": "info:altgr-comma",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": "\u00e7"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "qwerty-us-intl",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key",
+          "dead-key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "dvorak-left-us",
+      "geometry": "ansi-us",
+      "xkb": "us(dvorak-l)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: dvorak-l",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 100,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "D"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "dvorak-left-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "The quick brown fox jumps over the lazy dog, 1234567890! \"Quotes\" and it's (fine): [a]{b}/c?",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 92,
+          "attemptsCorrect": 92,
+          "finalCorrect": 92,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "dvorak-right-us",
+      "geometry": "ansi-us",
+      "xkb": "us(dvorak-r)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: dvorak-r",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 100,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "A"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "dvorak-right-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "The quick brown fox jumps over the lazy dog, 1234567890! \"Quotes\" and it's (fine): [a]{b}/c?",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 92,
+          "attemptsCorrect": 92,
+          "finalCorrect": 92,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "qwerty-us",
+      "geometry": "ansi-us",
+      "xkb": "us",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 100,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "F"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "qwerty-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "colemak-us",
+      "geometry": "ansi-us",
+      "xkb": "us(colemak)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: colemak",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 99,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [],
+        "identified": {
+          "layoutId": "colemak-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true,
+      "firstAttempt": {
+        "ok": false,
+        "error": null,
+        "steps": 99,
+        "lastStep": null,
+        "typed": "83 of 155 characters arrived"
+      }
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "workman-us",
+      "geometry": "ansi-us",
+      "xkb": "us(workman)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: workman",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 99,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [],
+        "identified": {
+          "layoutId": "workman-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "qwerty-us-intl",
+      "geometry": "abnt2",
+      "xkb": "us(intl)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: intl",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 107,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "F"
+            }
+          },
+          {
+            "step": "info:dead-then-t",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": ""
+            }
+          },
+          {
+            "step": "info:dead-then-c",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": ""
+            }
+          },
+          {
+            "step": "info:altgr-comma",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": "\u00e7"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "qwerty-us-intl",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key",
+          "dead-key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "dvorak-left-us",
+      "geometry": "abnt2",
+      "xkb": "us(dvorak-l)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: dvorak-l",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 104,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "D"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "dvorak-left-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "The quick brown fox jumps over the lazy dog, 1234567890! \"Quotes\" and it's (fine): [a]{b}/c?",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 92,
+          "attemptsCorrect": 92,
+          "finalCorrect": 92,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "dvorak-right-us",
+      "geometry": "abnt2",
+      "xkb": "us(dvorak-r)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: dvorak-r",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 104,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "A"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "dvorak-right-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "The quick brown fox jumps over the lazy dog, 1234567890! \"Quotes\" and it's (fine): [a]{b}/c?",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 92,
+          "attemptsCorrect": 92,
+          "finalCorrect": 92,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "qwerty-us",
+      "geometry": "abnt2",
+      "xkb": "us",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 104,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "F"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "qwerty-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "colemak-us",
+      "geometry": "abnt2",
+      "xkb": "us(colemak)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: colemak",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 103,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [],
+        "identified": {
+          "layoutId": "colemak-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Google Chrome 154.0.8037.57",
+      "layout": "workman-us",
+      "geometry": "abnt2",
+      "xkb": "us(workman)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: workman",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "steps": 103,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [],
+        "identified": {
+          "layoutId": "workman-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "qwerty-us-intl",
+      "geometry": "ansi-us",
+      "xkb": "us(intl)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: intl",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 103,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "F"
+            }
+          },
+          {
+            "step": "info:dead-then-t",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": "\u00b4t"
+            }
+          },
+          {
+            "step": "info:dead-then-c",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": ""
+            }
+          },
+          {
+            "step": "info:altgr-comma",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": "\u00e7"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "qwerty-us-intl",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key",
+          "dead-key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "dvorak-left-us",
+      "geometry": "ansi-us",
+      "xkb": "us(dvorak-l)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: dvorak-l",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 100,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "D"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "dvorak-left-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "The quick brown fox jumps over the lazy dog, 1234567890! \"Quotes\" and it's (fine): [a]{b}/c?",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 92,
+          "attemptsCorrect": 92,
+          "finalCorrect": 92,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "dvorak-right-us",
+      "geometry": "ansi-us",
+      "xkb": "us(dvorak-r)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: dvorak-r",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 100,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "A"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "dvorak-right-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "The quick brown fox jumps over the lazy dog, 1234567890! \"Quotes\" and it's (fine): [a]{b}/c?",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 92,
+          "attemptsCorrect": 92,
+          "finalCorrect": 92,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "qwerty-us",
+      "geometry": "ansi-us",
+      "xkb": "us",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 100,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "F"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "qwerty-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "colemak-us",
+      "geometry": "ansi-us",
+      "xkb": "us(colemak)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: colemak",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 99,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [],
+        "identified": {
+          "layoutId": "colemak-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "workman-us",
+      "geometry": "ansi-us",
+      "xkb": "us(workman)",
+      "model": "pc105",
+      "keymap": "rules: evdev model: pc105 layout: us variant: workman",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 99,
+      "calibration": {
+        "status": "passed",
+        "checked": 99,
+        "matched": 99,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [],
+        "identified": {
+          "layoutId": "workman-us",
+          "agreements": 94,
+          "comparisons": 94
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "qwerty-us-intl",
+      "geometry": "abnt2",
+      "xkb": "us(intl)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: intl",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 107,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "F"
+            }
+          },
+          {
+            "step": "info:dead-then-t",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": "\u00b4t"
+            }
+          },
+          {
+            "step": "info:dead-then-c",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": "\u0107"
+            }
+          },
+          {
+            "step": "info:altgr-comma",
+            "outcome": "info",
+            "observed": {
+              "type": "committed",
+              "text": "\u00e7"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "qwerty-us-intl",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key",
+          "dead-key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "dvorak-left-us",
+      "geometry": "abnt2",
+      "xkb": "us(dvorak-l)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: dvorak-l",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 104,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "D"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "dvorak-left-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "The quick brown fox jumps over the lazy dog, 1234567890! \"Quotes\" and it's (fine): [a]{b}/c?",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 92,
+          "attemptsCorrect": 92,
+          "finalCorrect": 92,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "dvorak-right-us",
+      "geometry": "abnt2",
+      "xkb": "us(dvorak-r)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: dvorak-r",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 104,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "A"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "dvorak-right-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "The quick brown fox jumps over the lazy dog, 1234567890! \"Quotes\" and it's (fine): [a]{b}/c?",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 92,
+          "attemptsCorrect": 92,
+          "finalCorrect": 92,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true,
+      "firstAttempt": {
+        "ok": false,
+        "error": "no message from the harness page",
+        "steps": 104,
+        "lastStep": {
+          "id": "control:caps-lock",
+          "keys": [
+            {
+              "code": "KeyF",
+              "capsLock": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "qwerty-us",
+      "geometry": "abnt2",
+      "xkb": "us",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 104,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [
+          {
+            "step": "control:caps-lock",
+            "outcome": "match",
+            "observed": {
+              "type": "char",
+              "char": "F"
+            }
+          }
+        ],
+        "identified": {
+          "layoutId": "qwerty-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "colemak-us",
+      "geometry": "abnt2",
+      "xkb": "us(colemak)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: colemak",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 103,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [],
+        "identified": {
+          "layoutId": "colemak-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    },
+    {
+      "browser": "Mozilla Firefox 140.16.0esr",
+      "layout": "workman-us",
+      "geometry": "abnt2",
+      "xkb": "us(workman)",
+      "model": "abnt2",
+      "keymap": "rules: evdev model: abnt2 layout: us variant: workman",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "steps": 103,
+      "calibration": {
+        "status": "passed",
+        "checked": 103,
+        "matched": 103,
+        "skipped": 0,
+        "absent": [],
+        "mismatches": [],
+        "info": [],
+        "identified": {
+          "layoutId": "workman-us",
+          "agreements": 98,
+          "comparisons": 98
+        }
+      },
+      "typing": {
+        "text": "It's \"quoted\" text: ~tilde, ^caret, `grave` and 50% of #1 (really)! The quick brown fox jumps over the lazy dog? [a{b}c] <d> e=f+g; h|i\\j @k $l &m *n _o -p",
+        "status": "completed",
+        "verification": "verified",
+        "counters": {
+          "attempts": 155,
+          "attemptsCorrect": 155,
+          "finalCorrect": 155,
+          "residualErrors": 0,
+          "corrections": 0,
+          "emptyBackspaces": 0,
+          "lateInputs": 0
+        },
+        "invalidity": [],
+        "wrong": [],
+        "paths": [
+          "key"
+        ],
+        "complete": true
+      },
+      "ok": true
+    }
+  ],
+  "note": "Full matrix run on 2026-09-27; two combinations failed their first attempt (recorded under firstAttempt) and passed when rerun alone."
+}

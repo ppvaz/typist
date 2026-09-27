@@ -1,0 +1,11 @@
+// Average of the values that are real numbers.
+function average(values) {
+  const numbers = values.filter((v) => typeof v === 'number' && !Number.isNaN(v));
+  if (numbers.length === 0) return null;
+  let total = 0;
+  for (const n of numbers) total += n;
+  return total / numbers.length;
+}
+
+console.log(average([3, 5, 8]));   // 5.333...
+console.log(average([]));          // null

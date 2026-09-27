@@ -1,0 +1,21 @@
+The order arrived on 14 March: 36 jars at $2.75 each, 12 boxes at $9.40 each,
+and 1 crate of 250 labels (total: $220.80). The invoice listed item #4471 twice,
+so we called the office at 10:15 and asked them to check it. They agreed the
+second line was an error; the corrected total is $208.80, or about 5% less. Our
+notes say "paid in full on 2 April," with receipt no. 88-3016 filed under [A-F].
+In the workshop, measurements follow a simple rule: cut once, measure twice, and
+write every number down. A shelf 1200 mm long needs 3 brackets spaced 450 mm
+apart; a 900 mm shelf needs only 2. The glue sets in 20-30 minutes at 18 C, but
+it needs 24 hours before any load over 15 kg. Keep the offcuts under 40 cm in the
+blue bin (not the red one!) and label each bin with its date: 03/09, 10/09, 17/09.
+A recipe for 4 people uses 500 g of flour, 350 ml of water, 10 g of salt, and 7 g
+of yeast. For 6 people multiply by 1.5: that is 750 g, 525 ml, 15 g, and 10.5 g.
+Bake at 230 degrees for 35-40 minutes; the loaf is done when its base sounds
+hollow. Score = (crust * 2 + crumb) / 3, rounded to 1 decimal place.
+Email the results to team@example.org with the subject "Batch 7 & 8 - results"
+and attach the table {date, weight, score}. Use the ~/notes/bakery folder, and
+back it up to /backup/2026 before Friday; 3 copies are better than 1.
+Is 7 x 8 = 56? Yes. Is 12 / 4 = 3? Also yes. Is 2 ^ 10 = 1024? Correct again!
+The path C:\data\reports\q3 holds last quarter's files, sorted by `size` and
+then by name; files matching *.tmp or *_old.* can be deleted after 30 days.
+Tickets cost 12 (adults), 6 (children) and 0 (under 3s); groups of 10+ get 15% off.

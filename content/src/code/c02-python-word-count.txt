@@ -1,0 +1,14 @@
+from collections import Counter
+
+
+def top_words(text, limit=5):
+    """Return the most common words, ignoring case and punctuation."""
+    words = [w.strip(".,;:!?\"'()").lower() for w in text.split()]
+    counts = Counter(w for w in words if w)
+    return counts.most_common(limit)
+
+
+if __name__ == "__main__":
+    sample = "The tide is out, the gulls are loud; the boats are in."
+    for word, n in top_words(sample, 3):
+        print(f"{word:>8} {n}")

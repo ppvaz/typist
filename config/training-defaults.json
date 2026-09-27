@@ -3,13 +3,21 @@
   "protocolId": "typist-core-v1",
   "sourceRoadmapVersion": "1.2",
   "coreModes": [
-    { "id": "QL", "layoutId": "qwerty-us", "hand": "left", "technique": "full-board" },
-    { "id": "QR", "layoutId": "qwerty-us", "hand": "right", "technique": "full-board" },
+    { "id": "QL", "layoutId": "qwerty-us-intl", "hand": "left", "technique": "full-board" },
+    { "id": "QR", "layoutId": "qwerty-us-intl", "hand": "right", "technique": "full-board" },
     { "id": "DL", "layoutId": "dvorak-left-us", "hand": "left", "technique": "purpose-built" },
     { "id": "DR", "layoutId": "dvorak-right-us", "hand": "right", "technique": "purpose-built" }
   ],
-  "baselineMode": { "id": "Q2", "layoutId": "qwerty-us", "hand": "both", "countsTowardCore": false },
-  "initialAssumptions": { "os": "linux", "geometry": "ansi-us", "requiresCalibration": true },
+  "baselineMode": { "id": "Q2", "layoutId": "qwerty-us-intl", "hand": "both", "countsTowardCore": false },
+  "expansionModes": [
+    { "id": "CL", "layoutId": "colemak-us", "hand": "left", "technique": "full-board", "inputPath": "native" },
+    { "id": "CR", "layoutId": "colemak-us", "hand": "right", "technique": "full-board", "inputPath": "native" },
+    { "id": "WL", "layoutId": "workman-us", "hand": "left", "technique": "full-board", "inputPath": "native" },
+    { "id": "WR", "layoutId": "workman-us", "hand": "right", "technique": "full-board", "inputPath": "native" },
+    { "id": "HQL", "layoutId": "qwerty-us", "hand": "left", "technique": "half-qwerty-mirror", "inputPath": "emulated" },
+    { "id": "HQR", "layoutId": "qwerty-us", "hand": "right", "technique": "half-qwerty-mirror", "inputPath": "emulated" }
+  ],
+  "initialAssumptions": { "os": "linux", "geometry": "ansi-us", "supportedGeometries": ["ansi-us", "abnt2"], "qwertyLayoutChoices": ["qwerty-us-intl", "qwerty-us"], "requiresCalibration": true },
   "roadmap": [
     { "stage": 1, "suggestedWeeks": [1, 4], "primaryMode": "QL", "gate": "advance" },
     { "stage": 2, "suggestedWeeks": [5, 8], "primaryMode": "QR", "gate": "advance" },

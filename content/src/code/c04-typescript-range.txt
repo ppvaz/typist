@@ -1,0 +1,19 @@
+type Range = { readonly start: number; readonly end: number };
+
+export function overlaps(a: Range, b: Range): boolean {
+  return a.start < b.end && b.start < a.end;
+}
+
+export function merge(ranges: Range[]): Range[] {
+  const sorted = [...ranges].sort((x, y) => x.start - y.start);
+  const out: Range[] = [];
+  for (const r of sorted) {
+    const last = out[out.length - 1];
+    if (last && r.start <= last.end) {
+      out[out.length - 1] = { start: last.start, end: Math.max(last.end, r.end) };
+    } else {
+      out.push(r);
+    }
+  }
+  return out;
+}
